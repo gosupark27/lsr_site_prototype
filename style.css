@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+body {
+    font-family: 'Cabin';
+    background-color: #758190;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#tentacles {
+    width: 50px;
+}
+
+.header {
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1000;
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.logo-link {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12x;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link:hover .logo-text{
+    color: #E5E7EB;
+}
+
+.logo-text {
+    color: #F9FAFB;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.025em;
+}
+
+.search-container {
+    display: flex;
+    width: max-content;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #1e2530;
+    justify-content: space-between;
+    margin: 0 4px;
+    padding: 6px 12px;
+    width: 300px;
+}
+
+.search-container input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 4px 0;
+}
+
+.search-container button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container i{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #9CA3AF;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #F9FAFB;
+}
+
+.description-container {
+    display: grid;
+    place-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 + p {
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.stats-container:hover {
+    box-shadow: 0 0 30px lightblue;
+}
+
+.stats-card {
+    background-color: #a8b0bc;
+    border-radius: 7px;
+    padding: 1%;
+    margin: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+#num-contributions, #total-raised, #num-games {
+    font-size: 50px;
+}
+
+#games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game-img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+.game-card {
+    background-color: #FFFFFF;
+    padding: 1%;
+    margin: 1%;
+    width: 300px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.game-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+}
+
+#button-container {
+    text-align: center;
+}
+
+button {
+    font-family: 'Cabin';
+    border: none;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 7px;
+}
