@@ -207,3 +207,44 @@ body {
     transform: translateY(-2px);
 }
 
+.page-section {
+    min-height: 50vh;
+    padding: 80px 8%;
+}
+
+.page-section h2 {
+    margin-top: 0;
+    color: var(--navy);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.page-section > p {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 14px;
+        padding: 14px 24px;
+    }
+
+    .navbar-links {
+        order: 3;
+        width:100%;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .hero-section {
+        min-height: 70vh;
+        padding: 70px 24px;
+        background-position: 65% center;
+    }
+
+    .hero-title {
+        font-size: clamp(2.4rem, 10vw, 3.5rem);
+    }
+}
