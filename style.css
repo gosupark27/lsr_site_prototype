@@ -303,6 +303,10 @@ body {
     color: var(--cream);
 }
 
+.repair-category[open] .repair-category-title {
+    background-color: var(--navy);
+    color: var(--cream);
+}
 .repair-category[open] .repair-category-title::after {
     content: "-";
 }
@@ -365,7 +369,7 @@ body {
 .btn-dark:hover {
     background-color: var(--burgundy);
     border-color: var(--burgundy);
-    transform: translate(-2px);
+    transform: translateY(-2px);
 }
 
 
