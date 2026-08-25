@@ -525,6 +525,60 @@ body {
     font-size: 0.85rem;
 }
 
+.about-section {
+    padding: 90px 8%;
+    background-color: var(--white);
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 
+        minmax(0, 1.5fr)
+        minmax(280px, 1fr);
+    gap: 70px;
+    align-items: start;
+}
+
+.about-story p {
+    margin: 0 0 24px;
+    color: var(--charcoal);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.about-story p:last-child {
+    margin-bottom: 0;
+}
+
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.about-highlight {
+    padding: 24px;
+    background-color: var(--cream);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+}
+
+.about-highlight-title {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--navy);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.about-highlight p {
+    margin: 0;
+    color: #545454;
+    line-height: 1.6;
+}
+
 @media (max-width: 900px) {
     .navbar {
         flex-wrap: wrap;
@@ -560,22 +614,36 @@ body {
     .repairs-section {
         padding: 70px 24px;
     }
+
     .section-header {
         margin-bottom: 36px;
     }
+
     .repair-category-title {
         padding: 20px 52px 20px 20px;
     }
+
     .repair-category-title::after {
         right: 20px;
     }
+
     .repair-category-content {
         grid-template-columns: 1fr;
         gap: 28px;
         padding: 24px 20px;
     }
+
     .repair-services-list {
         columns: 1;
+    }
+
+    .about-section {
+        padding: 70px 24px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
 
