@@ -233,10 +233,65 @@
                 </a>
             </div>
             </section>
-            <section class="page-section" id="gallery">
-                <h2>Gallery</h2>
-                <p>Examples of our work coming next</p>
+
+            <section class="gallery-section" id="gallery">
+                <div class="section-header">
+                    <p class="section-eyebrow">Our Work</p>
+                    <h2 class="section-title">Repair Gallery</h2>
+                    <p class="section-description">
+                        See examples of shoes, handbags, luggage, and leather goods
+                        we've repaired and restored for our customers.
+                    </p>
+                </div>
+
+                <div class="gallery-filters" role="group" aria-label="Filter repair gallery">
+                    <button 
+                        type="button"
+                        class="gallery-filter active"
+                        data-category="all"
+                        aria-pressed="true"
+                    >
+                        All
+                    </button>
+                    <button 
+                        type="button"
+                        class="gallery-filter"
+                        data-category="footwear"
+                        aria-pressed="false"
+                    >
+                        Footwear
+                    </button>
+                    <button 
+                        type="button"
+                        class="gallery-filter"
+                        data-category="bags"
+                        aria-pressed="false"
+                    >
+                        Handbags & Purses
+                    </button>
+                    <button 
+                        type="button"
+                        class="gallery-filter"
+                        data-category="luggage"
+                        aria-pressed="false"
+                    >
+                        Luggage
+                    </button>
+                    <button 
+                        type="button"
+                        class="gallery-filter"
+                        data-category="specialty"
+                        aria-pressed="false"
+                    >
+                        Specialty
+                    </button>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid">
+
+                </div>
             </section>
+
             <section class="page-section" id="reviews">
                 <h2>Reviews</h2>
                 <p>Customer reviews coming next</p>
