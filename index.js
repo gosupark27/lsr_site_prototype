@@ -212,3 +212,41 @@ function renderReviews(items) {
 }
 
 renderReviews(reviews);
+
+const quoteForm = document.querySelector("#quote-form");
+
+quoteForm.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    const formData = new FormData(quoteForm);
+
+    const name = formData.get("name");
+    const phone = formData.get("phone");
+    const email = formData.get("email");
+    const category = formData.get("category");
+    const description = formData.get("description");
+
+    const subject = encodeURIComponent(
+        `Quote Request — ${category}`
+    );
+    
+    const body = encodeURIComponent(
+        `Name: ${name}
+        Phone: ${phone}
+        Email: ${email}
+        Item Type: ${category}
+
+        Repair Description:
+        ${description}
+        `
+    );
+
+    window.location.href=
+        `mailto:lee.sr.phx@gmail.com?subject=${subject}&body=${body}`
+});
+
+const currentYear =
+    document.querySelector("#current-year");
+
+currentYear.textContent = new Date().getFullYear();
